@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posting Page</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>📝 Posting Page</h1>
+
+    <p>
+        Crie uma publicação e veja o resultado em tempo real.
+    </p>
+
+</header>
+
+<main>
+
+<section class="formulario">
+
+<form id="form-post">
+
+<label for="titulo">Título</label>
+
+<input
+type="text"
+id="titulo"
+placeholder="Digite o título do post"
+required>
+
+<label for="conteudo">Conteúdo</label>
+
+<textarea
+id="conteudo"
+rows="8"
+placeholder="Escreva seu conteúdo..."
+required></textarea>
+
+<button type="submit">
+🚀 Publicar
+</button>
+
+</form>
+
+</section>
+
+<section class="resultado">
+
+<h2>Pré-visualização</h2>
+
+<article class="card-post">
+
+<h3 id="renderizador-titulo">
+Seu título aparecerá aqui
+</h3>
+
+<p id="renderizador-conteudo">
+Seu conteúdo aparecerá aqui após enviar o formulário.
+</p>
+
+</article>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+Projeto desenvolvido para a disciplina de Front-End.
+</p>
+
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
