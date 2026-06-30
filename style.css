@@ -1,1 +1,253 @@
+/* ==========================
+   RESET
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins', sans-serif;
+    background:#eef2f7;
+    color:#333;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    background:#2563eb;
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+
+}
+
+header h1{
+
+    font-size:2.5rem;
+
+    margin-bottom:10px;
+
+}
+
+header p{
+
+    font-size:1rem;
+
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+main{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+/* ==========================
+   FORMULÁRIO
+========================== */
+
+.formulario{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.formulario label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.formulario input,
+.formulario textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.formulario input:focus,
+.formulario textarea:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+
+}
+
+.formulario textarea{
+
+    resize:vertical;
+
+}
+
+button{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================
+   RESULTADO
+========================== */
+
+.resultado{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.resultado h2{
+
+    margin-bottom:20px;
+
+    color:#2563eb;
+
+}
+
+.card-post{
+
+    background:#f8fafc;
+
+    border-left:6px solid #2563eb;
+
+    padding:25px;
+
+    border-radius:10px;
+
+}
+
+.card-post h3{
+
+    margin-bottom:15px;
+
+    color:#1e3a8a;
+
+}
+
+.card-post p{
+
+    line-height:1.8;
+
+    white-space:pre-line;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    margin-top:40px;
+
+    background:#1e293b;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:900px){
+
+    main{
+
+        grid-template-columns:1fr;
+
+    }
+
+    header h1{
+
+        font-size:2rem;
+
+    }
+
+}
